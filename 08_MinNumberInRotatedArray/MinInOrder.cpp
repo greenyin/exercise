@@ -1,6 +1,10 @@
+#include <iostream>
+using namespace std;
+
 class Solution{
 public:
-    int MinInOrder(vector<int> rotateArray,int index1,int index2){
+    int MinInOrder(vector<int> rotateArray,int index1,int index2)
+	{
         int result = rotateArray[index1];
 	    for(int i=index1+1;i<=index2;++i){
 			if(result > rotateArray[i])
@@ -9,7 +13,8 @@ public:
 		return result;
     }
 	    
-    int minNumberInRotateArray(vector<int> rotateArray) {
+    int minNumberInRotateArray(vector<int> rotateArray) 
+	{
         if(rotateArray.empty())
             return 0;
         int index1 = 0;
@@ -32,3 +37,8 @@ public:
 		return rotateArray[indexMid];
 	}
 };
+
+int main()
+{
+	return 0;
+}

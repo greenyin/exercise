@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
 /*
  *struct TreeNOde{
      int val;
@@ -39,3 +43,22 @@ public:
 		return root;
 	}
 };
+
+int main()
+{
+	vector<int> pre;
+	vector<int> in;
+	pre.push_back(1);
+	pre.push_back(2);
+	pre.push_back(3);
+	pre.push_back(4);
+	pre.push_back(5);
+	in.push_back(4);
+	in.push_back(2);
+	in.push_back(1);
+	in.push_back(5);
+	in.push_back(3);
+
+	TreeNode* root = reConstructBinTree(pre,in);
+	return 0;
+}

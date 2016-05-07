@@ -18,3 +18,11 @@ int Fibonacci(int n)
 	}
 	return fib3;
 }
+
+int main()
+{
+	int sum = 0;
+	sum = Fibonacci(5);
+	printf("%d",sum);
+	return 0;
+}
